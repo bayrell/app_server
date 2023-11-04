@@ -11,13 +11,13 @@ set_time_limit(-1);
 /* Init context */
 $init = require_once __DIR__ . "/init.php";
 
-$init["modules"][] = "App.Console";
+$init["modules"][] = "Admin.Console";
 
 /* Run console app */
 $exit_code = rtl::runApp(
     
     /* Entry point */
-    'App.Console.Main',
+    'Admin.Console.Main',
     
     /* Modules */
     $init["modules"],

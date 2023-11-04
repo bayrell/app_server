@@ -1,0 +1,39 @@
+{
+	"name": "Application Server",
+	"languages": ["php", "es6"],
+	"modules":
+	[
+		{
+			"src": "src/admin",
+			"type": "module"
+		},
+        {
+			"src": "src/lib",
+			"type": "folder"
+		}
+	],
+	"assets":
+	[
+		{
+			"type": "js",
+			"dest": "src/public/assets/admin.js",
+			"modules":
+			[
+				"Admin.Frontend"
+			]
+		},
+		{
+			"type": "js",
+			"dest": "src/public/assets/runtime.js",
+			"modules":
+			[
+				"Runtime"
+			]
+		}
+	],
+	"exclude":
+	[
+		"./example",
+		"./files"
+	]
+}
